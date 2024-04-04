@@ -32,10 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const quoteDisplay = document.querySelector(".quote");
     const sourceDisplay = document.querySelector(".source");
+    const totalDisplay = document.querySelector("#display");
 
     let randomQuote = quoteArray[0];
 
+    function getRandomColor() {
+        let randomColor = Math.floor(Math.random()*16777215).toString(16);
+        if (randomColor === "white") {
+            randomColor = Math.floor(Math.random()*16777215).toString(16);
+        }
+        return "#" + randomColor
+    }
+    
+    document.body.style.backgroundColor = getRandomColor();
+    // totalDisplay.style.backgroundColor = getRandomColor(); // doesn't yet work
     quoteDisplay.innerHTML = randomQuote.text;
     sourceDisplay.innerHTML = randomQuote.source;
+     
+    
 });
 

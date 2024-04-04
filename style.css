@@ -1,14 +1,24 @@
 * {
-    border: 1px solid black;
+    border: 1px solid white;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
 }
 
 div {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
+    text-align: center;
+    
 }
 .quote {
     height: 200px;
+    
 }
 
 .source {
