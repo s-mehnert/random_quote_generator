@@ -1,6 +1,8 @@
+/*
 * {
     border: 1px solid white;
 }
+*/
 
 body {
     background-color: black;
@@ -9,18 +11,28 @@ body {
     font-size: 32px;
 }
 
+h1 {
+    width: 600px;
+    text-align: right;
+    font-family: sans-serif;
+}
+
 div {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
     text-align: center;
-    
+    align-items: center; 
 }
+
 .quote {
     height: 200px;
-    
+    justify-content: center; 
+    font-family: cursive;
 }
 
 .source {
     height: 50px;
+    font-size: 24px;
+    font-family: monospace;
 }
